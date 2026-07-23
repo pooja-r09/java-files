@@ -1,13 +1,10 @@
-class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
-        for(int i=0;i<nums.length;i++){
-             for(int j=i+1;j<nums.length;j++){
-                if(nums[i]+nums[j]==target){
-                    return new int[]{i,j};
-                }
-             }
-            
-        }
-        return new int[]{};
+class Solution {
+    public boolean squareIsWhite(String coordinates) {
+        char col = coordinates.charAt(0); //a
+        char row = coordinates.charAt(1); //1
+        int colNumber = col - 'a' + 1;
+        int rowNumber = row - '0';
+        return (colNumber + rowNumber) % 2 != 0;
     }
 }
+        
