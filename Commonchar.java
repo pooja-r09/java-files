@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Commonchars {
     public List<String> commonChars(String[] words) {
         int[] minFreq = new int[26];

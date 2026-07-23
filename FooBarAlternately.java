@@ -1,3 +1,5 @@
+import java.util.concurrent.Semaphore;
+
 public class FooBarAlternately {
     private final int n;
     private final Semaphore fooSem = new Semaphore(1); // Starts allowed
